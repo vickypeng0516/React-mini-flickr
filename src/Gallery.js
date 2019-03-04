@@ -12,7 +12,7 @@ class Gallery extends React.Component {
         const keyword = this.props.keyword;
         // this.props.elements.map, react method
         // 建photo object对object做mapping映射
-        const childElements = this.props.elements.map(function(elements){
+        const childElements = this.props.elements.map(function(element){
            return (<Photo data={element} showAll={showAll} keyword={keyword} />
            );
         });
@@ -28,3 +28,5 @@ class Gallery extends React.Component {
         );
     }
 }
+
+export default Gallery;

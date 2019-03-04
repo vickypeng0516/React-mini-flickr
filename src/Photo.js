@@ -37,7 +37,7 @@ class Photo extends React.Component {
             });
         }// else flip the state
         else{
-            this.setState({pinned : !state.pinned});
+            this.setState({pinned : !this.state.pinned});
         }
     }
     render(){
